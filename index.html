@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Preventing Browser Default Action</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>         <!--  oncontextmenu="return false"  ;   onclick="location.href='https://www.google.com'"  -->
+    <header onclick="alert('Header Element')">SPORTS CLUB
+      <span style="padding:5px;font-size:10px;">credits</span>
+    </header>
+    <main>
+       
+      </div>
+
+      <div class="input-flx">
+        <input
+          text="text"
+          name="input-name"
+          placeholder="Favourite Sports"
+          class="input-txt"
+          id="input-txt-id"
+        />
+        <button class="input-button" id="input-button-id">save</button>
+      </div>
+
+      <ul id="input-list" class="input-list">
+
+        <li class="input-item"><div>ATHLETICS</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+        <li class="input-item"><div>FOOTBALL</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+        <li class="input-item"><div>HOCKEY</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+        <li class="input-item"><div>KABADDI</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+      </ul>
+    <style>
+
+    form {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    form * {
+        margin: 5px;
+    }
+    form input {
+        padding: 3px 10px;
+        /* outline: none; */
+    }
+
+    </style>
+    <form>
+        <div>
+            <input type="text" placeholder="Full Name">
+        </div>
+       <div>
+        <lable for="terms" style="font-size: 12px;">
+            <input type="checkbox" id="terms">I accept the <a href="https://google.com" 
+             onclick="return false" >Terms And Conditions</a> 
+        </lable>
+       </div>
+       <div>
+        <button style="padding: 3px 7px ;border-radius: 5px;background-color: darkgrey;border-color:darkgrey">
+            Submit
+        </button>
+       </div>
+    </form>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+    <!-- <script src="./script3.js"></script> -->
+  </body>
+</html>
